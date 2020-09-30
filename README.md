@@ -1,4 +1,6 @@
-# Lighsheet Microscopy image preprocessing for developmental biology
+# Lighsheet Microscopy image processing for developmental biology
+
+UNDER CONSTRUCTION. EMAIL TO lucasdaniel.lovercio@ucalgary.ca FOR DATASETS AND UNET .H5 FILES.
 
 Lucas D. Lo Vercio et al
 
@@ -6,12 +8,11 @@ Cumming School of Medicine, University of Calgary (Calgary, AB, Canada)
 
 ## Introduction
 
-This repository contains
+It is provided:
 * Dataset of annotated DAPI-stained and PHH3-stained slices.
 * Scripts and pretrained U-net for segmentating mesenchyme and neural ectodem in Lightsheet Microscopy (LSM)  DAPI-stained images.
-* Pretrained network for segmenting cells in DAPI-stained slices using the Fiji-plugin by Falk et al. 2019.
-* Pretrained network for segmenting proliferative cells in PHH3-stained slices using the Fiji-plugin by Falk et al. 2019.
-
+* Pretrained network for segmenting cells in DAPI-stained slices using the Fiji-plugin by Falk et al. (2019).
+* Pretrained network for segmenting proliferative cells in PHH3-stained slices using the Fiji-plugin by Falk et al. (2019).
 
 ## License
 
