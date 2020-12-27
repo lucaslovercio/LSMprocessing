@@ -1,4 +1,4 @@
-function slice_original_quantile = functionWeigertNorm(slice_original_quantile)
+function slice_original_quantile = functionPercNorm(slice_original_quantile) %Weigert et al 2018
 vQuantiles = quantile(slice_original_quantile(:),1000);
 quantile999low = vQuantiles(1);%double(prctile(slice_original_quantile(:),0.001));
 quantile999max = vQuantiles(1000);%double(prctile(slice_original_quantile(:),0.999));
