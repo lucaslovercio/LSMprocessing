@@ -1,6 +1,4 @@
-# Lighsheet Microscopy image processing for developmental biology
-
-UNDER CONSTRUCTION.
+# Light Sheet Microscopy image processing for developmental biology
 
 Lucas D. Lo Vercio et al. (lucasdaniel.lovercio@ucalgary.ca)
 
@@ -12,14 +10,32 @@ It is provided:
 * Dataset of annotated DAPI-stained and PHH3-stained slices.
 * Scripts and pretrained U-net for segmentating mesenchyme and neural ectodem in Lightsheet Microscopy (LSM)  DAPI-stained images.
 * Pretrained network for segmenting cells in DAPI-stained slices using the Fiji-plugin by Falk et al. (2019).
-* Pretrained network for segmenting proliferative cells in PHH3-stained slices using the Fiji-plugin by Falk et al. (2019).
+* Pretrained network for segmenting proliferating cells in PHH3-stained slices using the Fiji-plugin by Falk et al. (2019).
 
 ## Datasets
 
-The datasets and trained U-nets (H5 files) can be found in:
+The used datasets and trained U-nets (H5 files) can be found in:
 
 https://cumming.ucalgary.ca/lab/morpho/code-and-data
 
+## Software requirements
+
+* Tissue segmentation: Python 3, TensorFlow, Keras, imgaug (https://github.com/aleju/imgaug).
+* Cells and proliferating cells segmentation: ImageJ-Fiji, and Fiji-plugin by Falk et al. (2019) installed and running.
+* For tiling and merging: MATLAB. This can be replaced by your own scripts.
+
+## Workflow
+
+1. Tile the DAPI-stained slices with defined overlapping. You can use the provided MATLAB_Scripts/Script_01_scriptTileVolumeNB.m
+2. Segment the tissues using our proposed U-net (Python_Scripts/Script_03_scriptSegmentTiles.py)
+3. Merge the resulting tiles with tissues segmented. You can use the provided MATLAB_Scripts/Script_04_scriptMergeProcessedTilesNB.m
+4. Segment the cells in the DAPI-stained tiles generated in step 1, using the corresponding trained architecture and the script provided in ImageJ_Fiji_Scripts/segment_folder.ijm
+5. Merge the resulting tiles with cells segmented. You can use the provided MATLAB_Scripts/Script_04_scriptMergeProcessedTilesNB.m
+6. Tile the PHH3-stained slices with defined overlapping. You can use the provided MATLAB_Scripts/Script_01_scriptTileVolumeNB.m
+7. Segment the cells in the PHH3-stained tiles, using the corresponding trained architecture and the script provided in ImageJ_Fiji_Scripts/segment_folder.ijm
+8. Merge the resulting tiles with proliferating cells segmented. You can use the provided MATLAB_Scripts/Script_04_scriptMergeProcessedTilesNB.m
+9. (Optional) Create volumes as multipage TIFF using MATLAB_Scripts/Script_05_scriptCreateVolumeFromSlices.m
+10. (Optional) If you want to digitally remove parts of the volume, we suggest to use the tissue segmentation volume for this task and then mask the cell and proliferative cells segmentation volumes. For cropping, you can use 3D Slicer (https://www.slicer.org/).
 
 ## License
 
