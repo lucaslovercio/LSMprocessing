@@ -1,4 +1,4 @@
-from predict import assess_models, segment_folder
+from predict import segment_folder
 
 model_dir = '' #H5 file path
 frame_path = '' #Folder with tiles to segment tissues
