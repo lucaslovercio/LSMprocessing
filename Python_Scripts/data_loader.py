@@ -2,8 +2,7 @@ import itertools
 import os 
 import random 
 import numpy as np 
-import cv2 
-from augmentation import augment_pair 
+import cv2
 
 #From
 #https://github.com/divamgupta/image-segmentation-keras/blob/master/keras_segmentation/data_utils/data_loader.py
@@ -99,39 +98,7 @@ def get_segmentation_array(img, n_classes, width, height):
     for c in range(n_classes):
         seg_labels[:, :, c] = (img == c).astype(int) 
  
-    return seg_labels 
- 
- 
-def image_segmentation_generator(images_path, segs_path, batch_size, n_classes, output_height, output_width, 
-                                 norm_type=None, aug_type=None, deterministic=False): 
- 
-    if deterministic: 
-        # if the generator is being used for visualization, fix the order it generates images in 
-        random.seed(0) 
- 
-    img_seg_pairs = get_pairs_from_paths(images_path, segs_path) 
-    random.shuffle(img_seg_pairs) 
-    zipped = itertools.cycle(img_seg_pairs) 
- 
-    while True: 
-        X = [] 
-        Y = [] 
-        for _ in range(batch_size): 
-            img, mask = next(zipped) 
- 
-            img = cv2.imread(img, cv2.IMREAD_ANYDEPTH)#new changed from 0 
-            mask = cv2.imread(mask, cv2.IMREAD_ANYDEPTH)#new changed from 0 
-            # if the raw images are 16-bit, convert them to 8-bit for brightness augmentation and preprocessing by division 
-            if img.dtype == np.uint16: 
-                img = (img // 256).astype(np.uint8) 
-            # apply augmentation 
-            if aug_type is not None: 
-                img, mask = augment_pair(img, mask, aug_type) 
-             
-            X.append(get_image_array(img, norm_type)) 
-            Y.append(get_segmentation_array(mask, n_classes, output_width, output_height)) 
-             
-        yield np.array(X), np.array(Y) 
+    return seg_labels
  
 # feed segmentImage.prediction in batches so the normalization works 
 # this function is now deprecated 

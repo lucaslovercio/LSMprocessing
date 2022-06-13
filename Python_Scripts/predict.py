@@ -5,8 +5,6 @@ import cv2
 from data_loader import get_image_array, get_pairs_from_paths, get_images_from_path
 import os
 
-from metrics import evaluate_metrics
-
 def prediction(model, image_path, norm_type=None):
     img = cv2.imread(image_path, 0)
     img = get_image_array(img, norm_type)#relies on the model name
