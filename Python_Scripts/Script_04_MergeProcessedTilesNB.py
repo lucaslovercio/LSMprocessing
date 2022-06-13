@@ -26,7 +26,7 @@ filesToSearch = sorted(filesToSearch)
 for i in range(nFiles):
     os.chdir(folderTilesOriginal)
     filename = os.path.basename(filesToSearch[i])
-    #print(filename)
+    print(filename)
     with open(filename) as file:
         lines = [line.rstrip() for line in file] 
     file.close()
@@ -76,7 +76,7 @@ for i in range(nFiles):
             # for r in Rows and c in Cols
             # reconstruct te png filename
             processedFile = firstPatPath + "_block_" + str(r).zfill(2) + "_" + str(c).zfill(2) + fileformat
-            #print(processedFile)
+            print(processedFile)
             # read the file
             img = cv2.imread(processedFile, cv2.IMREAD_ANYDEPTH)
             #print(np.shape(img))

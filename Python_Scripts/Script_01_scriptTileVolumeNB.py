@@ -4,6 +4,7 @@ from skimage import img_as_ubyte
 import os
 import cv2
 import numpy as np
+from functionPercNorm import functionPercNorm
 
 folderVolume =      '' # folder containing slices
 folderDestTiles =   '' # destination folder
@@ -36,8 +37,9 @@ for imgNumber in range(nFiles):
     img = cv2.imread(fullpathOrig, cv2.IMREAD_ANYDEPTH)
     hOrig, wOrig = np.shape(img)
     #
-    img_rescale = exposure.rescale_intensity(img, out_range=(0, 255))
-    imgNorm = exposure.equalize_adapthist(img, clip_limit=0.005)
+    imgNorm = functionPercNorm(img)
+    imgNorm = exposure.rescale_intensity(imgNorm, out_range=(0, 255))
+    imgNorm = imgNorm.astype(np.uint8)
     #
     hImgAugmented = hOrig + patchSize
     wImgAugmented = wOrig + patchSize
@@ -82,8 +84,8 @@ for imgNumber in range(nFiles):
                 rgb = block
 
             os.chdir(folderDestTiles)
-            #cv2.imwrite(name, rgb.astype(np.uint16)) #saves as 16 bit image
-            io.imsave(name, img_as_ubyte(rgb), check_contrast = False)
+            cv2.imwrite(name, rgb.astype(np.uint8)) #saves as 16 bit image
+            #io.imsave(name, img_as_ubyte(rgb), check_contrast = False)
               
     # save slice data
     infoName = outputName + '_slice_' + str(sliceNumber).zfill(4) + '_info.txt'
