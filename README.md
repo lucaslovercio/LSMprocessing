@@ -14,7 +14,7 @@ It is provided:
 
 ## Datasets
 
-The used datasets and trained U-nets (H5 files) can be found in:
+The used datasets, trained U-nets (H5 files) and a E9.5 mouse embryo scan can be found in:
 
 https://cumming.ucalgary.ca/lab/morpho/code-and-data
 
@@ -22,7 +22,7 @@ https://cumming.ucalgary.ca/lab/morpho/code-and-data
 
 * Tissue segmentation: Python 3, TensorFlow, Keras, imgaug (https://github.com/aleju/imgaug).
 * Cells and proliferating cells segmentation: ImageJ-Fiji, and Fiji-plugin by Falk et al. (2019) installed and running.
-* For tiling and merging: MATLAB. This can be replaced by your own scripts.
+* For tiling and merging: MATLAB and Python.
 
 ## Workflow
 
@@ -36,6 +36,12 @@ https://cumming.ucalgary.ca/lab/morpho/code-and-data
 8. Merge the resulting tiles with proliferating cells segmented. You can use the provided MATLAB_Scripts/Script_04_scriptMergeProcessedTilesNB.m
 9. (Optional) Create volumes as multipage TIFF using MATLAB_Scripts/Script_05_scriptCreateVolumeFromSlices.m
 10. (Optional) If you want to digitally remove parts of the volume, we suggest to use the tissue segmentation volume for this task and then mask the cell and proliferative cells segmentation volumes. For cropping, you can use 3D Slicer (https://www.slicer.org/).
+
+## Instructional videos
+
+You can find instructional videos, showing the usage of the workflow, in the following playlist:
+
+https://www.youtube.com/watch?v=d4WYwCOQOGs&list=PLE_338whZSZGDErjRFQSqpmsj_jDY6lj6
 
 ## License
 
