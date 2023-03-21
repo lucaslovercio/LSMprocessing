@@ -71,9 +71,8 @@ SOFTWARE.
 
 L. D. Lo Vercio et al., "Segmentation of Tissues and Proliferating Cells in Light-Sheet Microscopy Images of Mouse Embryos Using Convolutional Neural Networks," in IEEE Access, vol. 10, pp. 105084-105100, 2022, doi: 10.1109/ACCESS.2022.3210542.
 
-...
-
-@ARTICLE{LoVercio2022,
+```
+@article{LoVercio2022,
   author={{Lo Vercio}, Lucas D. and Green, Rebecca M. and Robertson, Samuel and Guo, Sienna and Dauter, Andreas and Marchini, Marta and Vidal-García, Marta and Zhao, Xiang and Mahika, Anandita and Marcucio, Ralph S. and Hallgrímsson, Benedikt and Forkert, Nils D.},
   journal={IEEE Access}, 
   title={Segmentation of Tissues and Proliferating Cells in Light-Sheet Microscopy Images of Mouse Embryos Using Convolutional Neural Networks}, 
@@ -82,9 +81,7 @@ L. D. Lo Vercio et al., "Segmentation of Tissues and Proliferating Cells in Ligh
   number={},
   pages={105084-105100}
 }
-
-...
-
+```
 
 ### References
 
