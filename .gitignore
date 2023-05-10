@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+2023/.DS_Store
+2023/03_Analysis/.DS_Store
+
+# Files that are too big
+2023/03_Analysis/cluster/*.rds
