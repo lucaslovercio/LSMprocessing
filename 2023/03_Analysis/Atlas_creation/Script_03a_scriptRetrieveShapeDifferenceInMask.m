@@ -2,7 +2,6 @@ close all; clear all; clc;
 
 previous = 'E11.0';
 %next = 'E11.5';
-%next = 'May10_E11_2_flipped';
 
 %nexts_names = {'Dec2_E10_9','Dec2_E10_9_flipped','Dec2_E10_10','Dec2_E10_10_flipped','Dec2_E10_17','Dec2_E10_17_flipped',...
 %     'Dec2_E105_3','Dec2_E105_3_flipped','Oct27_E105_4', 'Oct27_E105_4_flipped'};
@@ -21,18 +20,14 @@ for j=1:nFiles
     next = nexts_names{j};
     disp('------------------------');
     disp(next);
-    folder =        '/home/lucas/Documents/DevelopmentArticleCorrectedTissues/All_to_E10.5/SimReg/';
-    %pathVolumeDifferenceNifti = strcat(folder,'VolumeDifference_',previous,'_Tissues_to_',next,'_mesen.nii');
-    %pathVolumeDifferenceNifti = strcat('/home/lucas/Documents/DevelopmentArticleCorrectedTissues/All_to_E10.5/SimReg/Diff_volumes/',...
-    %    'VolumeDifference_',previous,'_Tissues_to_',next,'_mesen.nii');
-    %pathProliferation = strcat(folder,previous,filesep,previous,'_PHH3_Smooth_w_30_WeigertNorm.tiff');
+    folder =        ''; %Folder with all samples registered to the same objective
     pathVolumeDifferenceNifti = strcat(folder,'Diff_volumes_not_masked_noW',filesep,...
         'VolumeDifference_',previous,'_Tissues_to_',next,'_mesen.nii');
     pathProliferation = strcat(folder,previous,filesep,previous,'_PHH3_Smooth_w_30_WeigertNorm.tiff');
     pathMask = strcat(folder,'MesenMajority03_cropped_shifted_120_cropped.tiff');
     
     %Read volumes
-    diff_volume = niftiread(pathVolumeDifferenceNifti); %15*15*15=3375 30^3 = 27000
+    diff_volume = niftiread(pathVolumeDifferenceNifti);
     prolif_volume = functionReadTIFFMultipage(pathProliferation);
     mask_volume  = functionReadTIFFMultipage(pathMask); mask_volume = mask_volume>0;
     
@@ -65,9 +60,6 @@ for j=1:nFiles
     diff_values = double(diff_volume(mask_volume));
     prolif_values = double(prolif_volume(mask_volume));
     clear mask_volume diff_volume prolif_volume
-    
-    %size(diff_values)
-    %size(prolif_values)
     
     %Correlation
     matCorr = horzcat(prolif_values,diff_values);
