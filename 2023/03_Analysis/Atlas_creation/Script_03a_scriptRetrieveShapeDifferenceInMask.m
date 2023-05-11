@@ -23,7 +23,7 @@ for j=1:nFiles
     folder =        ''; %Folder with all samples registered to the same objective
     pathVolumeDifferenceNifti = strcat(folder,'Diff_volumes_not_masked_noW',filesep,...
         'VolumeDifference_',previous,'_Tissues_to_',next,'_mesen.nii');
-    pathProliferation = strcat(folder,previous,filesep,previous,'_PHH3_Smooth_w_30_WeigertNorm.tiff');
+    pathProliferation = strcat(folder,previous,filesep,previous,'_PHH3_Smooth_w_30_HistNorm.tiff');
     pathMask = strcat(folder,'MesenMajority03_cropped_shifted_120_cropped.tiff');
     
     %Read volumes
