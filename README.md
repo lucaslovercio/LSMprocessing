@@ -24,6 +24,21 @@ L. D. Lo Vercio et al., "Segmentation of Tissues and Proliferating Cells in Ligh
 }
 ```
 
+R. M. Green and L. D. Lo Vercio et al., "Quantifying the relationship between cell proliferation and morphology during development of the face". Under revision.
+
+```
+@article {GreenLoVercio2023,
+	author = {Rebecca M. Green and Lucas D. Lo Vercio and Andreas Dauter and Elizabeth C. Barretto and Jay Devine and Marta Vidal-Garc{\'\i}a and Marta Marchini and Samuel Robertson and Xiang Zhao and Anandita Mahika and M. Bilal Shakir and Sienna Guo and Julia C. Boughner and Wendy Dean and Arthur D. Lander and Ralph S. Marcucio and Nils D. Forkert and Benedikt Hallgr{\'\i}msson},
+	title = {Quantifying the relationship between cell proliferation and morphology during development of the face},
+	elocation-id = {2023.05.12.540515},
+	year = {2023},
+	doi = {10.1101/2023.05.12.540515},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2023/05/12/2023.05.12.540515},
+	journal = {bioRxiv}
+}
+```
+
 ## Instructional videos
 
 You can find instructional videos, showing the usage of the workflow, in the following playlist:
