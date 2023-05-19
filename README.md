@@ -24,7 +24,8 @@ L. D. Lo Vercio et al., "Segmentation of Tissues and Proliferating Cells in Ligh
 }
 ```
 
-R. M. Green and L. D. Lo Vercio et al., "Quantifying the relationship between cell proliferation and morphology during development of the face". Under revision.
+R. M. Green* and L. D. Lo Vercio* et al., "Quantifying the relationship between cell proliferation and morphology during development of the face". Under revision.
+*These authors share first authorship.
 
 ```
 @article {GreenLoVercio2023,
