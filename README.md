@@ -11,32 +11,33 @@ In this repository you can find the publicly available source code of our Light-
 ### Publications
 
 L. D. Lo Vercio et al., "Segmentation of Tissues and Proliferating Cells in Light-Sheet Microscopy Images of Mouse Embryos Using Convolutional Neural Networks," in IEEE Access, vol. 10, pp. 105084-105100, 2022, doi: 10.1109/ACCESS.2022.3210542.
+Data related to this article available in: https://cumming.ucalgary.ca/lab/morpho/code-and-data
 
 ```
 @article{LoVercio2022,
-  author={{Lo Vercio}, Lucas D. and Green, Rebecca M. and Robertson, Samuel and Guo, Sienna and Dauter, Andreas and Marchini, Marta and Vidal-García, Marta and Zhao, Xiang and Mahika, Anandita and Marcucio, Ralph S. and Hallgrímsson, Benedikt and Forkert, Nils D.},
-  journal={IEEE Access}, 
-  title={Segmentation of Tissues and Proliferating Cells in Light-Sheet Microscopy Images of Mouse Embryos Using Convolutional Neural Networks}, 
-  year={2022},
-  volume={10},
-  number={},
-  pages={105084-105100}
+author={{Lo Vercio}, Lucas D. and Green, Rebecca M. and Robertson, Samuel and Guo, Sienna and Dauter, Andreas and Marchini, Marta and Vidal-García, Marta and Zhao, Xiang and Mahika, Anandita and Marcucio, Ralph S. and Hallgrímsson, Benedikt and Forkert, Nils D.},
+journal={IEEE Access}, 
+title={Segmentation of Tissues and Proliferating Cells in Light-Sheet Microscopy Images of Mouse Embryos Using Convolutional Neural Networks}, 
+year={2022},
+volume={10},
+number={},
+pages={105084-105100}
 }
 ```
 
 R. M. Green* and L. D. Lo Vercio* et al., "Quantifying the relationship between cell proliferation and morphology during development of the face". Under revision.
 *These authors share first authorship.
+Data related to this article available in: https://doi.org/10.5683/SP3/AXMCDE
 
 ```
 @article {GreenLoVercio2023,
-	author = {Rebecca M. Green and Lucas D. Lo Vercio and Andreas Dauter and Elizabeth C. Barretto and Jay Devine and Marta Vidal-Garc{\'\i}a and Marta Marchini and Samuel Robertson and Xiang Zhao and Anandita Mahika and M. Bilal Shakir and Sienna Guo and Julia C. Boughner and Wendy Dean and Arthur D. Lander and Ralph S. Marcucio and Nils D. Forkert and Benedikt Hallgr{\'\i}msson},
-	title = {Quantifying the relationship between cell proliferation and morphology during development of the face},
-	elocation-id = {2023.05.12.540515},
-	year = {2023},
-	doi = {10.1101/2023.05.12.540515},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2023/05/12/2023.05.12.540515},
-	journal = {bioRxiv}
+author = {Rebecca M. Green and Lucas D. Lo Vercio and Andreas Dauter and Elizabeth C. Barretto and Jay Devine and Marta Vidal-Garc{\'\i}a and Marta Marchini and Samuel Robertson and Xiang Zhao and Anandita Mahika and M. Bilal Shakir and Sienna Guo and Julia C. Boughner and Wendy Dean and Arthur D. Lander and Ralph S. Marcucio and Nils D. Forkert and Benedikt Hallgr{\'\i}msson},
+title = {Quantifying the relationship between cell proliferation and morphology during development of the face},
+year = {2023},
+doi = {10.1101/2023.05.12.540515},
+publisher = {Cold Spring Harbor Laboratory},
+URL = {https://www.biorxiv.org/content/early/2023/05/12/2023.05.12.540515},
+journal = {bioRxiv}
 }
 ```
 
