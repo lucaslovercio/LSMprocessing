@@ -11,6 +11,7 @@ In this repository you can find the publicly available source code of our Light-
 ### Publications
 
 L. D. Lo Vercio et al., "Segmentation of Tissues and Proliferating Cells in Light-Sheet Microscopy Images of Mouse Embryos Using Convolutional Neural Networks," in IEEE Access, vol. 10, pp. 105084-105100, 2022, doi: 10.1109/ACCESS.2022.3210542.
+
 Data related to this article available in: https://cumming.ucalgary.ca/lab/morpho/code-and-data
 
 ```
@@ -26,6 +27,7 @@ pages={105084-105100}
 ```
 
 R. M. Green* and L. D. Lo Vercio* et al., "Quantifying the relationship between cell proliferation and morphology during development of the face". Under revision.
+
 *These authors share first authorship.
 Data related to this article available in: https://doi.org/10.5683/SP3/AXMCDE
 
