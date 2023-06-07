@@ -33,7 +33,7 @@ Data related to this article available in: https://doi.org/10.5683/SP3/AXMCDE
 
 ```
 @article {GreenLoVercio2023,
-author = {Rebecca M. Green and Lucas D. Lo Vercio and Andreas Dauter and Elizabeth C. Barretto and Jay Devine and Marta Vidal-Garc{\'\i}a and Marta Marchini and Samuel Robertson and Xiang Zhao and Anandita Mahika and M. Bilal Shakir and Sienna Guo and Julia C. Boughner and Wendy Dean and Arthur D. Lander and Ralph S. Marcucio and Nils D. Forkert and Benedikt Hallgr{\'\i}msson},
+author = {Rebecca M. Green and Lucas D. {Lo Vercio} and Andreas Dauter and Elizabeth C. Barretto and Jay Devine and Marta Vidal-Garc{\'\i}a and Marta Marchini and Samuel Robertson and Xiang Zhao and Anandita Mahika and M. Bilal Shakir and Sienna Guo and Julia C. Boughner and Wendy Dean and Arthur D. Lander and Ralph S. Marcucio and Nils D. Forkert and Benedikt Hallgr{\'\i}msson},
 title = {Quantifying the relationship between cell proliferation and morphology during development of the face},
 year = {2023},
 doi = {10.1101/2023.05.12.540515},
