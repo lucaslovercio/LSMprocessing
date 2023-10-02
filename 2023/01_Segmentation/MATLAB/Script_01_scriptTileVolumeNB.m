@@ -34,7 +34,7 @@ for imgNumber=3:nFiles
     img = imread(fullpathOrig); img = img(:,:,1);
     [hOrig,wOrig] = size(img);
     
-    imgNorm = functionWeigertNorm(img);
+    imgNorm = functionPercNorm(img);
     
     hImgAugmented = hOrig + patchSize;
     wImgAugmented = wOrig + patchSize;
