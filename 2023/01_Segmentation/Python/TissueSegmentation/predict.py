@@ -46,7 +46,7 @@ def prediction(model, image_path, norm_type=None):
 # method for using a model (specified by path) to output segmentations for all images in a folder to another folder
 def segment_folder(model, frame_path, output_folder, filesep = '/'):
     imgs = get_images_from_path(frame_path)
-    norm_type = None
+    norm_type = 'divide'
     if 'divide_and_sub' in model:
         norm_type = 'divide_and_sub'
     elif 'sub_mean' in model:
